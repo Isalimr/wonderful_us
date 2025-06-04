@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lavishly+Yours&family=League+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+/* Centraliza a caixa toda na tela */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Gradiente animado */
+  background: linear-gradient(-45deg, #0B1118, #294141, #506d54, #93B493);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Caixa principal com sombra e bordas arredondadas */
+.login-box {
+  width: 600px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Lado esquerdo: formulário */
+.login-form {
+  width: 50%;
+  background: #898; /* fundo cor de rosa claro */
+  color: #0c1116;
+}
+
+/* Lado direito: imagem */
+.login-image {
+  width: 50%;
+  background-color: #ffffff;
+
+}
+
+.login-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+    width: 90%;
+  }
+  .login-form, .login-image {
+    width: 100%;
+    height: auto;
+  }
+}
+.custom-btn {
+  background-color: #fff;
+  color: #2b2201; /* cor do texto */
+  border: none;
+
+}
+
+.custom-btn:hover {
+  background-color: #2b2201; /* cor ao passar o mouse */
+    color: #fff;
+}
+
+
+.dedicatoria {
+    color: #fff;
+    padding: 150px 0 0 0;
+}
